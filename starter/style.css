@@ -28,6 +28,11 @@ body {
     background-color: #f3f3f3;
 }
 
+hr {
+    margin: 50px 0px;
+    color: #444;
+}
+
 .btn__green {
     background: var(--color-primary-darker);
     border: 2px solid var(--color-primary-darker);
@@ -36,6 +41,17 @@ body {
     padding: 15px;
     border-radius: 25px;
     color: #fff;
+}
+
+.btn__white {
+    border: none;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 /****** NAV SECTION *****/
@@ -50,7 +66,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -60,12 +76,6 @@ body {
     transition: all 0.3;
 }
 
-/* .header__text {
-    display: flex;
-    border: 3px solid tomato;
-    width: 50%;
-    justify-content: space-between;
-} */
 
 .header__text ul li a {
     font-size: 1.2rem;
@@ -73,25 +83,163 @@ body {
     color: #444;
 }
 
+.highlight {
+    position: relative;
+}
+
+.highlight::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-image: var(--gradient-primary);
+}
 
 /***** HERO SCETION *****/
-.hero__section{
-    /* position: relative; */
-    display: flex;
+.hero__section {
     width: 90%;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.hero__text{
-    border: 3px solid navy;
+.hero__text h1 {
+    font-size: 4.2rem;
+    line-height: 4.3rem;
+}
+
+.hero__text h1 span {
+    background: var(--color-primary-darker);
+}
+
+.hero__text span {
+    margin: 25px 0px;
+    /* display: block; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.hero__img {
     width: 45%;
 }
 
-.hero__img{
-    border: 2px solid maroon;
-    width: 45%;
-    background: url(./img/hero.png);
+
+/***** FEATURES *****/
+
+.features__section {
+    width: 70%;
+    margin: 0 auto;
 }
 
+.title {
+    margin-top: 90px;
+}
 
+.title h1 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.title h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.features {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__img {
+    width: 50%;
+}
+
+.features__icon svg {
+    height: 60px;
+    width: 60px;
+}
+
+.features__feature p {
+    line-height: 2rem;
+}
+
+.features__header {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.open__account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    background-color: #f3f3f3;
+    padding: 3rem 4rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.open__account .btn--close-modal {
+    font-size: 2.2rem;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    right: 0.5rem;
+    background: none;
+    border-color: transparent;
+}
+
+.open__account h1 {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+}
+
+.open__account form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.open__account form label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.open__account form input {
+    width: 80%;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+
+.modal {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}

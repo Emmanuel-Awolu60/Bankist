@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="img/png" href="./img/icon.png">
+    <link rel="stylesheet" href="./mediaqueries.css">
     <title>
         Bankist | When banking meets
         minimalist
@@ -25,7 +28,7 @@
                     <a href="">Testimonials</a>
                     <a href="">Operations</a>
                     <a href="">Features</a>
-                    <button class="btn__green">Open account</button>
+                    <button class="btn__green" id="open__account__btn">Open account</button>
                 </li>
             </ul>
         </div>
@@ -34,20 +37,136 @@
 
 
 <!------ HERO SECTION  ------>
-<!-- 
+
 <section class="hero__section">
     <div class="hero__text">
         <h1>When banking meets
-           <br> minimalist</h1>
-           <span>A simpler banking experience for a simpler life.</span>
-           <button>Learn more ↓</button>
+            <br> minimalist
+        </h1>
+        <span>A simpler banking experience for a simpler life.</span>
+        <button class="btn__white">Learn more ↓</button>
+    </div>
+    <img src="./img/hero.png" class="hero__img" alt="">
+
+    <!-- <div class="hero__img"><img src="./img/hero.png" alt=""></div> -->
+</section>
+<hr>
+
+<!----- FEATURES SECTION ----->
+
+<section class="features__section">
+    <div class="title">
+        <h1>features</h1>
+
+        <h4>Everything you need in a modern bank and <br>
+            more.</h4>
+    </div>
+</section>
+
+<div class="features">
+    <img src="./img/digital-lazy.jpg" alt="computer" class="features__img lazy-img">
+
+    <div class="features__feature">
+        <div class="features__icon">
+            <svg>
+                <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+        </div>
+        <h5 class="features__header">100% digital bank</h5>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br>
+            elit. Unde alias
+            sint quos? Accusantium a fugiat porro <br>
+            reiciendis saepe quibusdam
+            debitis ducimus.
+        </p>
+    </div>
+</div>
+
+<div class="features">
+    <div class="features__feature">
+        <div class="features__icon">
+            <svg>
+                <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+        </div>
+        <h5 class="features__header">100% digital bank</h5>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br>
+            elit. Unde alias
+            sint quos? Accusantium a fugiat porro <br>
+            reiciendis saepe quibusdam
+            debitis ducimus.
+        </p>
+    </div>
+    <img src="./img/grow-lazy.jpg" alt="grow" class="features__img grow-img">
+</div>
+
+<div class="features">
+    <img src="./img/card-lazy.jpg" alt="card" class="features__img card-img">
+
+    <div class="features__feature">
+        <div class="features__icon">
+            <svg>
+                <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+        </div>
+        <h5 class="features__header">100% digital bank</h5>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br>
+            elit. Unde alias
+            sint quos? Accusantium a fugiat porro <br>
+            reiciendis saepe quibusdam
+            debitis ducimus.
+        </p>
     </div>
 
-    <div class="hero__img"></div>
-</section> -->
+    <!-- <div class="features">
+    <img src="img/digital-lazy.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+    <div class="features__feature">
+      <div class="features__icon">
+        <svg>
+          <use xlink:href="img/icons.svg#icon-monitor"></use>
+        </svg>
+      </div>
+      <h5 class="features__header">100% digital bank</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+        sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+        debitis ducimus.
+      </p>
+    </div> -->
 
-<!-- hero section  -->
-<script src="./main.js"></script>
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="open__account hidden">
+        <button class="btn--close-modal">×</button>
+        <h1>Open your bank account
+            <br> in just 5 minutes
+        </h1>
+        <form action="">
+            <label for="text">First Name</label>
+            <input type="text">
+            <label for="text">Last Name</label>
+            <input type="text">
+            <label for="email">Email Address</label>
+            <input type="email">
+        </form>
+        <button class="btn__green modal">Next step →</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./main.js"></script>
+    </body>
 
 </html>
