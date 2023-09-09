@@ -1,28 +1,28 @@
 @media screen and (max-width: 870px) {
 
-    .nav__mobile__section {
+    .navMobileSection {
         display: flex;
     }
 
-    .nav__mobile__text {
+    .navMobileText {
         display: flex;
     }
 
-    .header__section {
+    .headerSection {
         position: absolute;
         display: none;
     }
 
-    .hero__section {
+    .heroSection {
         display: block;
     }
 
-    .hero__img {
+    .heroImg {
         width: 100%;
         margin-top: 20px;
     }
 
-    .features__section {
+    .featuresSection {
         width: 80%;
         margin: 0 auto;
     }
@@ -32,11 +32,11 @@
         margin-top: 30px;
     }
 
-    .features__img {
+    .featuresImg {
         display: none;
     }
 
-    .features__feature {
+    .featuresFeature {
         margin-top: 30px;
     }
 }

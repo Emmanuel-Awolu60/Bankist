@@ -1,14 +1,14 @@
 "use strict";
 //open account
-const openAccountBtn = document.querySelector(".open__account__btn");
-const openAccount = document.querySelector(".open__account");
+const openAccountBtn = document.querySelector(".openAccountBtn");
+const openAccount = document.querySelector(".openAccount");
 const closeModal = document.querySelector(".btn--close-modal");
 const overlay = document.querySelector(".overlay");
 
 //mobile nav
-const mobileMenu = document.getElementsByClassName("mobile__menu");
-const mobileClose = document.getElementsByClassName("mobile__close");
-const mobileText = document.getElementsByClassName("nav__mobile__text");
+const mobileMenu = document.getElementsByClassName("mobileMenu");
+const mobileClose = document.getElementsByClassName("mobileClose");
+const mobileText = document.getElementsByClassName("navMobileText");
 
 // Mobile Section
 // mobileMenu.addEventListener("click", () => {
