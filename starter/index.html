@@ -176,13 +176,19 @@
     </div>
 
     <div class="oprationsBtnSection">
-        <button class="oprationsBtn oprationsBtn--1"><span>01</span> Instant Transfers</button>
-        <button class="oprationsBtn oprationsBtn--2"><span>02</span> Instant Loans</button>
-        <button class="oprationsBtn oprationsBtn--3"><span>03</span> Instant Closing</button>
+        <button class="oprationsBtn oprationsBtn--1" data-tab-1>
+            <span>01</span> Instant Transfers
+        </button>
+        <button class="oprationsBtn oprationsBtn--2" data-tab-2>
+            <span>02</span> Instant Loans
+        </button>
+        <button class="oprationsBtn oprationsBtn--3" data-tab-3>
+            <span>03</span> Instant Closing
+        </button>
     </div>
 
 
-    <div class="oprationsText">
+    <div class="oprationsText oprationsText--1">
         <div class="oprationTextIcon oprationTextIcon--1">
             <svg>
                 <use xlink:href="img/icons.svg#icon-upload"></use>
@@ -201,7 +207,7 @@
     </div>
 
 
-    <div class="oprationsText">
+    <div class="oprationsText oprationsText--2 hidden">
         <div class="oprationTextIcon oprationTextIcon--2">
             <svg>
                 <use xlink:href="img/icons.svg#icon-home"></use>
@@ -220,7 +226,7 @@
     </div>
 
 
-    <div class="oprationsText">
+    <div class="oprationsText oprationsText--3" id="hidden">
         <div class="oprationTextIcon oprationTextIcon--3">
             <svg>
                 <use xlink:href="img/icons.svg#icon-user-x"></use>
@@ -266,7 +272,7 @@
                 </blockquote>
             </div>
 
-            <div class="testimonial">
+            <div class="testimonial active">
                 <h2>The last step to becoming a complete minimalist</h2>
                 <blockquote class="testimonialText">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas
@@ -301,6 +307,12 @@
                     </address>
                 </blockquote>
             </div>
+        </div>
+
+        <div class="indicator">
+            <button class="dot"></button>
+            <button class="dot active"></button>
+            <button class="dot"></button>
         </div>
     </section>
 
