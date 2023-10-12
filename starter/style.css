@@ -29,9 +29,9 @@ body {
     scroll-behavior: smooth;
 }
 
-  button{
-        cursor: pointer; 
-    }
+button {
+    cursor: pointer;
+}
 
 hr {
     margin: 50px 0px;
@@ -60,7 +60,7 @@ hr {
     display: none !important;
 }
 
-#hidden{
+#hidden {
     display: none;
 }
 
@@ -294,6 +294,11 @@ hr {
     align-items: center;
 }
 
+.operations__btn--active {
+    transform: translateY(-20%);
+}
+
+
 .oprationsBtn {
     align-items: center;
     /* padding: 1rem 5.2rem; */
@@ -303,6 +308,8 @@ hr {
     font-size: 1.2rem;
     font-weight: lighter;
 }
+
+
 
 .oprationsBtn span {
     font-weight: 600;
@@ -325,10 +332,21 @@ hr {
 
 /***** OPERATIONS TEXT  *****/
 .oprationsText {
+    display: none;
+    /* width: 65%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 4.5rem; */
+}
+
+
+.operations__text--active {
+    display: flex;
     width: 65%;
     margin: 0 auto;
     display: flex;
     margin-top: 4.5rem;
+    padding-left: 4rem;
 }
 
 .oprationTextIcon {
@@ -338,8 +356,8 @@ hr {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-   /* background-color: #39b385; */
-   margin-right: 1.5rem;
+    /* background-color: #39b385; */
+    margin-right: 1.5rem;
 }
 
 .oprationTextIcon svg {
@@ -349,15 +367,15 @@ hr {
     /* fill: #39b385; */
 }
 
-.oprationTextIcon--1 svg{
+.oprationTextIcon--1 svg {
     fill: var(--color-secondary-darker);
 }
 
-.oprationTextIcon--2 svg{
+.oprationTextIcon--2 svg {
     fill: var(--color-primary-darker);
 }
 
-.oprationTextIcon--3 svg{
+.oprationTextIcon--3 svg {
     fill: var(--color-tertiary-darker);
 }
 
@@ -367,7 +385,7 @@ hr {
 
 
 /***** TESTIMONIALS *****/
-.testimonials{
+.testimonials {
     width: 70%;
     margin: 0 auto;
 }
@@ -385,7 +403,7 @@ hr {
 
 /***** SLIDER *****/
 
-.slider{
+.slider {
     /* overflow: hidden; */
     /* position: relative; */
     /* width: 100%; */
@@ -394,6 +412,7 @@ hr {
     display: flex;
     gap: 20px;
 }
+
 /* 
  .testimonial{
     display: none;
@@ -402,58 +421,58 @@ hr {
 
 
 .testimonial::before {
-content: '\201C';
-position: absolute;
-top: -5.7rem;
-left: -6.8rem;
-line-height: 1;
-font-size: 20rem;
-font-family: inherit;
-color: var(--color-primary);
-z-index: -1;
+    content: '\201C';
+    position: absolute;
+    top: -5.7rem;
+    left: -6.8rem;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: inherit;
+    color: var(--color-primary);
+    z-index: -1;
 }
 
-.testimonial h2{
+.testimonial h2 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 
-.testimonialText{
+.testimonialText {
     font-size: 1rem;
     /* line-height: normal; */
 }
 
-.testimonialAuthor{
+.testimonialAuthor {
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
 
-.testimonialPhoto{
+.testimonialPhoto {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     margin-right: 1rem;
 }
 
-.testimonialName{
+.testimonialName {
     display: block;
-   font-size: 1rem;
+    font-size: 1rem;
 }
 
-.testimonialLocation{
+.testimonialLocation {
     display: block;
 }
 
 /***** FOOTER SECTION *****/
 
-#section--4{
+#section--4 {
     background: #444;
     color: #f3f3f3;
 }
 
-.footerHeard{
+.footerHeard {
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -461,13 +480,13 @@ z-index: -1;
     padding-top: 4.5rem;
 }
 
-.footerHeard h4{
+.footerHeard h4 {
     font-size: 2.8rem;
     font-weight: 500;
     line-height: normal;
 }
 
-.footerBtn{
+.footerBtn {
     background-color: var(--color-primary-darker);
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -477,7 +496,7 @@ z-index: -1;
     margin-bottom: 4rem;
 }
 
-.footerButtomBtn{
+.footerButtomBtn {
     width: 50%;
     margin: 0 auto;
     display: flex;
@@ -485,7 +504,7 @@ z-index: -1;
     justify-content: space-between;
 }
 
-.footerButtomBtn button{
+.footerButtomBtn button {
     font-size: 1.2rem;
     background: none;
     border: none;
@@ -493,18 +512,18 @@ z-index: -1;
 
 }
 
-.footerImg{
+.footerImg {
     display: block;
     text-align: center;
     margin-top: 2rem;
-    
+
 }
 
-.footerImg img{
+.footerImg img {
     height: 5rem;
 }
 
-.footerCopyRight{
+.footerCopyRight {
     padding-top: 2rem;
 }
 
@@ -528,7 +547,7 @@ z-index: -1;
     top: 0;
     right: 0.5rem;
     background: none;
- 
+
     border-color: transparent;
 }
 
