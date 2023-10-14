@@ -5,16 +5,71 @@ const openAccount = document.querySelector(".openAccount");
 const closeModal = document.querySelector(".btn--close-modal");
 const overlay = document.querySelector(".overlay");
 
-const taps = document.querySelector(".oprationsBtn");
+// const taps = document.querySelector(".oprationsBtn");
+// const allBtn = document.querySelectorAll(".oprationsBtn");
+// const texts = document.querySelectorAll(".oprationsText");
+// console.log(texts.classList);
+
+function handleBankOperations(event, idname) {
+  const texts = document.querySelectorAll(".oprationsText");
+  const allBtn = document.querySelectorAll(".oprationsBtn");
+
+  for (let i = 0; i < texts.length; i++) {
+    texts[i].style.display = "none";
+  }
+  for (let i = 0; i < allBtn.length; i++) {
+    allBtn[i].className = allBtn[i].className.replace(
+      " operations__btn--active",
+      ""
+    );
+  }
+  document.getElementById(idname).style.display = "flex";
+  event.currentTarget.className += " operations__btn--active";
+}
+
+// for (let i = 0; i < allBtn.length; i++) {
+//   allBtn[i].addEventListener("click", (e) => {
+//     console.log(e.target.getAttribute("data-wriiteup"));
+//     if ((i = 0)) {
+//       texts[0].classList.add("operations__btn--active");
+//       texts[1].classList.contains("operations__btn--active")
+//         ? texts[1].classList.remove("operations__btn--active")
+//         : "";
+//       texts[2].classList.contains("operations__btn--active")
+//         ? texts[2].classList.remove("operations__btn--active")
+//         : "";
+//     }
+
+//     if ((i = 1)) {
+//       texts[1].classList.add("operations__btn--active");
+//       texts[0].classList.contains("operations__btn--active")
+//         ? texts[0].classList.remove("operations__btn--active")
+//         : "";
+//       texts[2].classList.contains("operations__btn--active")
+//         ? texts[2].classList.remove("operations__btn--active")
+//         : "";
+//     }
+
+//     if ((i = 2)) {
+//       texts[2].classList.add("operations__btn--active");
+//       texts[1].classList.contains("operations__btn--active")
+//         ? texts[1].classList.remove("operations__btn--active")
+//         : "";
+//       texts[0].classList.contains("operations__btn--active")
+//         ? texts[0].classList.remove("operations__btn--active")
+//         : "";
+//     }
+//   });
+// }
+
 const oprationsBtn1 = document.querySelector(".oprationsBtn--1");
 const oprationsBtn2 = document.querySelector(".oprationsBtn--2");
 // const oprationsBtn3 = document.querySelector(".oprationsBtn--3");
 
 const oprationsBtnSection = document.querySelector(".oprationsBtnSection");
-const texts = document.querySelector(".oprationsText");
 const oprationsText1 = document.getElementsByClassName("oprationsText--1");
 const oprationsText2 = document.getElementsByClassName("oprationsText--2");
-// const oprationsText3 = document.getElementsByClassName("oprationsText--3");
+const oprationsText3 = document.getElementsByClassName("oprationsText--3");
 
 //mobile nav
 const mobileMenu = document.getElementsByClassName("mobileMenu");
@@ -47,17 +102,19 @@ overlay.addEventListener("click", () => {
   overlay.classList.add("hidden");
 });
 
-oprationsBtnSection.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".oprationsBtn");
+// oprationsBtnSection.addEventListener("click", function (e) {
+//   const clicked = e.target.closest(".oprationsBtn");
 
-  if (!clicked) return;
+//   if (!clicked) return;
 
-  taps.classList.remove("operations__btn--active");
-  texts.classList.remove("operations__text--active");
+//   taps.classList.remove("operations__btn--active");
+//   texts.classList.remove("operations__text--active");
 
-  clicked.classList.add("operations__btn--active");
-  texts.classList.add("operation__text--active");
+//   clicked.classList.add("operations__btn--active");
+//   texts.classList.add("operation__text--active");
 
-  document.querySelector(`text--${clicked.dataset.texts}`);
-  // .classList.add("operations__text--active");
-});
+//   var tomato = document.querySelector(
+//     `.oprationsText--${clicked.dataset.texts}`
+//   );
+//   console.log(tomato); // .classList.add("operations__text--active");
+// });
