@@ -5,11 +5,7 @@ const openAccount = document.querySelector(".openAccount");
 const closeModal = document.querySelector(".btn--close-modal");
 const overlay = document.querySelector(".overlay");
 
-// const taps = document.querySelector(".oprationsBtn");
-// const allBtn = document.querySelectorAll(".oprationsBtn");
-// const texts = document.querySelectorAll(".oprationsText");
-// console.log(texts.classList);
-
+// oprations Section
 function handleBankOperations(event, idname) {
   const texts = document.querySelectorAll(".oprationsText");
   const allBtn = document.querySelectorAll(".oprationsBtn");
@@ -76,12 +72,6 @@ const mobileMenu = document.getElementsByClassName("mobileMenu");
 const mobileClose = document.getElementsByClassName("mobileClose");
 const mobileText = document.getElementsByClassName("navMobileText");
 
-// Mobile Section
-// mobileMenu.addEventListener("click", () => {
-//   mobileText;
-// });
-// const removeClass = classList.remove("hidden");
-
 // Open account buttom
 openAccountBtn.addEventListener("click", (e) => {
   e.preventDefault;
@@ -101,20 +91,3 @@ overlay.addEventListener("click", () => {
   openAccount.classList.add("hidden");
   overlay.classList.add("hidden");
 });
-
-// oprationsBtnSection.addEventListener("click", function (e) {
-//   const clicked = e.target.closest(".oprationsBtn");
-
-//   if (!clicked) return;
-
-//   taps.classList.remove("operations__btn--active");
-//   texts.classList.remove("operations__text--active");
-
-//   clicked.classList.add("operations__btn--active");
-//   texts.classList.add("operation__text--active");
-
-//   var tomato = document.querySelector(
-//     `.oprationsText--${clicked.dataset.texts}`
-//   );
-//   console.log(tomato); // .classList.add("operations__text--active");
-// });
