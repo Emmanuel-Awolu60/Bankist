@@ -5,10 +5,10 @@ const openAccount = document.querySelector(".openAccount");
 const closeModal = document.querySelector(".btn--close-modal");
 const overlay = document.querySelector(".overlay");
 
-// oprations Section
+// operations Section
 function handleBankOperations(event, idname) {
-  const texts = document.querySelectorAll(".oprationsText");
-  const allBtn = document.querySelectorAll(".oprationsBtn");
+  const texts = document.querySelectorAll(".operationsText");
+  const allBtn = document.querySelectorAll(".operationsBtn");
 
   for (let i = 0; i < texts.length; i++) {
     texts[i].style.display = "none";
@@ -58,14 +58,14 @@ function handleBankOperations(event, idname) {
 //   });
 // }
 
-const oprationsBtn1 = document.querySelector(".oprationsBtn--1");
-const oprationsBtn2 = document.querySelector(".oprationsBtn--2");
-// const oprationsBtn3 = document.querySelector(".oprationsBtn--3");
+const operationsBtn1 = document.querySelector(".operationsBtn--1");
+const operationsBtn2 = document.querySelector(".operationsBtn--2");
+// const operationsBtn3 = document.querySelector(".operationsBtn--3");
 
-const oprationsBtnSection = document.querySelector(".oprationsBtnSection");
-const oprationsText1 = document.getElementsByClassName("oprationsText--1");
-const oprationsText2 = document.getElementsByClassName("oprationsText--2");
-const oprationsText3 = document.getElementsByClassName("oprationsText--3");
+const operationsBtnSection = document.querySelector(".operationsBtnSection");
+const operationsText1 = document.getElementsByClassName("operationsText--1");
+const operationsText2 = document.getElementsByClassName("operationsText--2");
+const operationsText3 = document.getElementsByClassName("operationsText--3");
 
 //mobile nav
 const mobileMenu = document.getElementsByClassName("mobileMenu");

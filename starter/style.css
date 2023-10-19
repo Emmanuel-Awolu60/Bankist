@@ -269,29 +269,29 @@ hr {
 
 
 /***** OPERATIONS SECTION  *****/
-.oprations {
+.operations {
     width: 70%;
     margin: 0 auto;
 }
 
-.oprations h1 {
+.operations h1 {
     font-size: 1.2rem;
     color: #39b385;
 }
 
-.oprations p {
+.operations p {
     font-size: 3.2rem;
     line-height: normal;
 }
 
-.oprationsBtnSection {
+.operationsBtnSection {
     width: 70%;
     margin: 0 auto;
     margin-top: 4rem;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .operations__btn--active {
@@ -299,7 +299,7 @@ hr {
 }
 
 
-.oprationsBtn {
+.operationsBtn {
     align-items: center;
     /* padding: 1rem 5.2rem; */
     padding: .6rem 2.5rem;
@@ -311,27 +311,27 @@ hr {
 
 
 
-.oprationsBtn span {
+.operationsBtn span {
     font-weight: 600;
 }
 
-.oprationsBtn--1 {
+.operationsBtn--1 {
     background-color: var(--color-secondary-darker);
     border-color: transparent;
 }
 
-.oprationsBtn--2 {
+.operationsBtn--2 {
     background-color: var(--color-primary-darker);
     border-color: transparent;
 }
 
-.oprationsBtn--3 {
+.operationsBtn--3 {
     background-color: var(--color-tertiary-darker);
     border-color: transparent;
 }
 
 /***** OPERATIONS TEXT  *****/
-.oprationsText {
+.operationsText {
     display: none;
     width: 65%;
     margin: 0 auto;
@@ -344,7 +344,7 @@ hr {
     display: flex;
 }
 
-.oprationTextIcon {
+.operationTextIcon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,35 +354,35 @@ hr {
     margin-right: 1.5rem;
 }
 
-.oprationTextIcon svg {
+.operationTextIcon svg {
     height: 5rem;
     display: flex;
     justify-content: end;
     /* fill: #39b385; */
 }
 
-.oprationsText h1 {
+.operationsText h1 {
     font-size: 1.5rem;
 }
 
 
-.oprationsText p{
+.operationsText p{
     font-size: 1.2rem;
 }
 
-.oprationTextIcon--1 svg {
+.operationTextIcon--1 svg {
     fill: var(--color-secondary-darker);
 }
 
-.oprationTextIcon--2 svg {
+.operationTextIcon--2 svg {
     fill: var(--color-primary-darker);
 }
 
-.oprationTextIcon--3 svg {
+.operationTextIcon--3 svg {
     fill: var(--color-tertiary-darker);
 }
 
-.oprationTextIcon svg use {
+.operationTextIcon svg use {
     border: 2px solid black;
 }
 
