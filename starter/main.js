@@ -23,41 +23,6 @@ function handleBankOperations(event, idname) {
   event.currentTarget.className += " operations__btn--active";
 }
 
-// for (let i = 0; i < allBtn.length; i++) {
-//   allBtn[i].addEventListener("click", (e) => {
-//     console.log(e.target.getAttribute("data-wriiteup"));
-//     if ((i = 0)) {
-//       texts[0].classList.add("operations__btn--active");
-//       texts[1].classList.contains("operations__btn--active")
-//         ? texts[1].classList.remove("operations__btn--active")
-//         : "";
-//       texts[2].classList.contains("operations__btn--active")
-//         ? texts[2].classList.remove("operations__btn--active")
-//         : "";
-//     }
-
-//     if ((i = 1)) {
-//       texts[1].classList.add("operations__btn--active");
-//       texts[0].classList.contains("operations__btn--active")
-//         ? texts[0].classList.remove("operations__btn--active")
-//         : "";
-//       texts[2].classList.contains("operations__btn--active")
-//         ? texts[2].classList.remove("operations__btn--active")
-//         : "";
-//     }
-
-//     if ((i = 2)) {
-//       texts[2].classList.add("operations__btn--active");
-//       texts[1].classList.contains("operations__btn--active")
-//         ? texts[1].classList.remove("operations__btn--active")
-//         : "";
-//       texts[0].classList.contains("operations__btn--active")
-//         ? texts[0].classList.remove("operations__btn--active")
-//         : "";
-//     }
-//   });
-// }
-
 const operationsBtn1 = document.querySelector(".operationsBtn--1");
 const operationsBtn2 = document.querySelector(".operationsBtn--2");
 // const operationsBtn3 = document.querySelector(".operationsBtn--3");
@@ -90,4 +55,29 @@ overlay.addEventListener("click", () => {
   //overlay
   openAccount.classList.add("hidden");
   overlay.classList.add("hidden");
+});
+
+
+
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });

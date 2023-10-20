@@ -64,8 +64,6 @@ hr {
     display: none;
 }
 
-
-
 /****** NAV SECTION *****/
 
 .navMobileSection {
@@ -85,7 +83,7 @@ hr {
     height: 50%;
     top: 0;
     right: 0;
-    transform: translateY(-350px);
+    transform: translateY(-420px);
 }
 
 .navMobileText ul {
@@ -103,7 +101,6 @@ hr {
     margin-bottom: 25px;
     color: #444;
     font-size: 1.5rem;
-
 }
 
 .navMobile {
@@ -112,7 +109,6 @@ hr {
     align-items: center;
     background-color: #fff;
     filter: drop-shadow(1px 1px 2px black);
-
 }
 
 .navMobile span {
@@ -202,6 +198,11 @@ hr {
     width: 45%;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 
 /***** FEATURES *****/
 
@@ -288,10 +289,8 @@ hr {
     width: 70%;
     margin: 0 auto;
     margin-top: 4rem;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .operations__btn--active {
@@ -301,7 +300,6 @@ hr {
 
 .operationsBtn {
     align-items: center;
-    /* padding: 1rem 5.2rem; */
     padding: .6rem 2.5rem;
     border-radius: 2rem;
     margin: 0 3.2rem;
@@ -358,7 +356,6 @@ hr {
     height: 5rem;
     display: flex;
     justify-content: end;
-    /* fill: #39b385; */
 }
 
 .operationsText h1 {
@@ -366,7 +363,7 @@ hr {
 }
 
 
-.operationsText p{
+.operationsText p {
     font-size: 1.2rem;
 }
 
@@ -407,21 +404,9 @@ hr {
 /***** SLIDER *****/
 
 .slider {
-    /* overflow: hidden; */
-    /* position: relative; */
-    /* width: 100%; */
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
     display: flex;
     gap: 20px;
 }
-
-/* 
- .testimonial{
-    display: none;
-}  */
-
-
 
 .testimonial::before {
     content: '\201C';
@@ -440,10 +425,8 @@ hr {
     font-weight: 500;
 }
 
-
 .testimonialText {
     font-size: 1rem;
-    /* line-height: normal; */
 }
 
 .testimonialAuthor {
