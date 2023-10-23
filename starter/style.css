@@ -199,8 +199,8 @@ hr {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+    width: 600px;
+    height: 300px;
 }
 
 
@@ -403,7 +403,7 @@ hr {
 
 /***** SLIDER *****/
 
-.slider {
+/* .slider {
     display: flex;
     gap: 20px;
 }
@@ -449,6 +449,22 @@ hr {
 
 .testimonialLocation {
     display: block;
+} */
+
+.swiper {
+    width: 40%;
+    /* height: 100%; */
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* word-break: break-all; */
+    /* width: 90%; */
 }
 
 /***** FOOTER SECTION *****/
